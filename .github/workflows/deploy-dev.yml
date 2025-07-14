@@ -15,6 +15,9 @@ jobs:
       - name: 의존성 설치
         run: npm install
 
+      - name: 의존성 설치
+        run: npm run build
+
       - name: AWS 인증 절차
         uses: aws-actions/configure-aws-credentials@v4
         with:
